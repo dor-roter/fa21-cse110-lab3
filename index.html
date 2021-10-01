@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab 2 - Meeting notes</title>
+    <meta name="author" content="Dor Roter">
+    <link rel="icon" href="./favicon.ico?v=1" type="image/x-icon" size="32x32">
+</head>
+<body>
+    <header>
+        <h1>Lab 2 - Meeting notes</h1>
+    <h5>Date - 01/10/2021</h5>
+    </header>
+    <nav>
+        <ol>
+            <li><a href="#attendance">Attendance</a></li>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#footer">Footer</a></li>
+
+        </ol>
+    </nav>    
+
+    <hr>
+    <section id="attendance">
+        <h4>Attendance</h4>
+        <div>
+            <ul>
+                <li><b><span>Dor Roter</span></b></li>
+                <li><strong><span>John Doe</span></strong></li>
+            </ul>   
+        </div>
+    </section>
+    <hr>
+    <section id="intro">
+        <h3>Introduction</h3>
+        <p>
+            <em>Some very intresting and brief <br> introduction to this web page </em>
+        </p>
+    </section>
+    <hr>
+
+    <section id="media">
+        <h3>Multi-media</h3>
+        <img src="favicon.ico"></img>
+        <audio controls src="ding.mp3">Ding</audio>
+        <video controls src="video.mp4" height="320"></video>
+    </section>
+    <hr>
+
+    
+    <section id="interactive">
+        <h3>Interactive</h3>
+        <details>
+            <summary>Meeting Summary</summary>
+            <p>
+                The imaginary meeting went great! covered so much stuff, luckily there is a... <br>
+                nicely writen meeting notes page.
+            </p>
+        </details>
+    </section>
+    <hr>
+
+    <section id="forms">
+        <h3>Forms</h3>
+        <form>
+            <input type="text" placeholder="Name"/><br>
+            <input type="date"/><br>
+
+            <input type="checkbox" value="1" id="check"/>
+            <label for="check">Check?</label>
+            <fieldset>
+                <input type="radio" value="1" name="radios" id="radio"/>
+                <label for="radio">Radio?</label>
+                <input type="radio" value="2" name="radios" id="radio1"/>
+                <label for="radio1">Radio1?</label>
+            </fieldset>
+            <span>Text:</span>
+            <textarea></textarea>
+            
+            <br>
+            <label for=ice-cream-flavors">Favorite ice-cream flavor?</label>
+            <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+            <datalist id="ice-cream-flavors">
+                <option value="Chocolate">
+                <option value="Coconut">
+                <option value="Mint">
+                <option value="Strawberry">
+                <option value="Vanilla">
+            </datalist>
+
+            <br>
+            <label for="select-university">Choose a University:</label>
+            <select id="select-university">
+                <option>UCSD</option>
+            </select>
+            <br><br>
+            <button>Submit</button>
+        </form>
+    </section>
+    <hr>
+
+    <footer id="footer">
+        <small><i>Made by Dor Roter</i></small>
+    </footer>
+</body>
+</html>
