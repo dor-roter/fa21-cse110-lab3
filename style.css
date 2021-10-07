@@ -1,5 +1,11 @@
 /* some nice comment to begin with */
 
+@media screen and (max-width: 620px) {
+    body {
+      background-color: rgba(0, 0, 255, 0.322);
+    }
+  }
+
 * {
     color: black;
     font-family: 'Open Sans', sans-serif;
