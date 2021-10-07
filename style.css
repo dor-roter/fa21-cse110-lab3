@@ -84,6 +84,11 @@ section#intro p {
     text-align: center;
 }
 
+audio ~ video {
+    border: 1px solid blue;
+    padding: 15px;
+}
+
 header > h1 {
     color: orange;
 }
@@ -113,6 +118,11 @@ header > h1 + h5 {
     gap: 10px;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 50px;
+}
+
+input[type="radio"] {
+    height: 30px;
+    width: 30px;
 }
 
 .one {
