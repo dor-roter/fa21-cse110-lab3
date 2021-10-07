@@ -1,1 +1,116 @@
 /* some nice comment to begin with */
+
+* {
+    color: black;
+}
+
+video, audio {
+    display: block;
+    margin: 5px;
+}
+
+body {
+    max-width: 2000px;
+    min-width: 250px;
+}
+
+.media {
+    display: inline-block;
+}
+
+.media:first-child {
+    padding-right: 85px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(123, 218, 255);
+}
+
+#footer > div {
+    display: block;
+    width: 150px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+}
+
+ol li > a {
+    color: rgb(0,0,0);
+}
+
+ol li > a:hover {
+    color: red;
+}
+
+ol li > a:active {
+    color: gray;
+}
+
+section#attendance span {
+    color: #4d4d4dc3;
+    height: 2em;
+    padding: 0px 2px;
+    display: block;
+}
+
+section#attendance > h4 {
+    margin-left: -5px;
+}
+
+section#attendance {
+    background-color: #cecece;
+    display: block;
+    position: relative;
+    height: 25rem;
+    width: 100%;
+    margin: 5px 2px 5px 2px;
+}
+
+section#intro p {
+    color: hsla(235, 100%, 50%, .5);
+    line-height: 1cm;
+    text-decoration: overline;
+    text-align: center;
+}
+
+header > h1 {
+    color: orange;
+}
+
+header > h1 + h5 {
+    color: blue;
+}
+
+#media f{
+    margin-top: 12pt;
+    padding: 15px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+#media .flex-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items:self-end;
+}
+
+#forms form {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+}
+
+.one {
+    grid-auto-flow: column;
+    display: grid;
+    align-self: center;
+  }
+  
