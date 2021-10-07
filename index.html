@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="author" content="Dor Roter">
     <link rel="icon" href="./favicon.ico?v=1" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
     <header>
         <h1>Lab 2 - Meeting notes</h1>
-    <h5>Date - 01/10/2021</h5>
+        <h5>Date - 01/10/2021</h5>
     </header>
     <nav>
         <ol>
@@ -42,9 +44,11 @@
 
     <section id="media">
         <h3>Multi-media</h3>
-        <img src="favicon.ico" alt="favicon"/>
-        <audio controls src="ding.mp3">Ding</audio>
-        <video controls src="video.mp4" height="320"></video>
+        <div class="flex-container">
+            <img src="favicon.ico" alt="favicon"/>
+            <audio class="media" controls src="ding.mp3">Ding</audio>
+            <video class="media" controls src="video.mp4" height="320"></video>
+        </div>
     </section>
     <hr>
 
@@ -64,36 +68,45 @@
     <section id="forms">
         <h3>Forms</h3>
         <form>
-            <input type="text" placeholder="Name"/><br>
-            <input type="date"/><br>
+            <div class="one">
+                <input type="text" placeholder="Name"/><br>
+                <input type="date"/><br>
+            </div>
 
-            <input type="checkbox" value="1" id="check"/>
-            <label for="check">Check?</label>
+            <div>
+                <input type="checkbox" value="1" id="check"/>
+                <label for="check">Check?</label>
+            </div>
+            
             <fieldset>
                 <input type="radio" value="1" name="radios" id="radio"/>
                 <label for="radio">Radio?</label>
                 <input type="radio" value="2" name="radios" id="radio1"/>
                 <label for="radio1">Radio1?</label>
             </fieldset>
-            <span>Text:</span>
-            <textarea></textarea>
+            <div>
+                <span>Text:</span>
+                <textarea></textarea>
+            </div>
             
-            <br>
-            <label for="ice-cream-choice">Favorite ice-cream flavor?</label>
-            <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
-            <datalist id="ice-cream-flavors">
-                <option value="Chocolate">
-                <option value="Coconut">
-                <option value="Mint">
-                <option value="Strawberry">
-                <option value="Vanilla">
-            </datalist>
+            <div>
+                <label for="ice-cream-choice">Favorite ice-cream flavor?</label>
+                <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+                <datalist id="ice-cream-flavors">
+                    <option value="Chocolate">
+                    <option value="Coconut">
+                    <option value="Mint">
+                    <option value="Strawberry">
+                    <option value="Vanilla">
+                </datalist>
+            </div>
 
-            <br>
-            <label for="select-university">Choose a University:</label>
-            <select id="select-university">
-                <option>UCSD</option>
-            </select>
+            <div>
+                <label for="select-university">Choose a University:</label>
+                <select id="select-university">
+                    <option>UCSD</option>
+                </select>
+            </div>
             <br><br>
             <button>Submit</button>
         </form>
@@ -102,6 +115,7 @@
 
     <footer id="footer">
         <small><i>Made by Dor Roter</i></small>
+        <div>Middle</div>
     </footer>
 </body>
 </html>
